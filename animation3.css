@@ -41,9 +41,13 @@ BODY {
     max-width: 600px;
 }
 
-.prev-btn {
-    display: inline-block;
+.navigation {
+    display: flex;
+    gap: 15px;
     margin-top: 30px;
+}
+
+.nav-btn {
     padding: 10px 20px;
     background: linear-gradient(45deg, #834d9b, #d04ed6);
     color: white;
@@ -52,7 +56,7 @@ BODY {
     transition: all 0.3s;
 }
 
-.prev-btn:hover {
+.nav-btn:hover {
     transform: scale(1.05);
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
