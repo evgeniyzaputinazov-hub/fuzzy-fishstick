@@ -1,0 +1,82 @@
+/* Основные стили для страницы про художника */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+}
+
+header {
+    background: linear-gradient(to right, #2c3e50, #4ca1af);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.2);
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: rgba(255,255,255,0.3);
+}
+
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.section-animated {
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4, #ff9a9e);
+    background-size: 400% 400%;
+    padding: 30px;
+    border-radius: 15px;
+    margin: 20px 0;
+    animation: gradientShift 10s ease infinite;
+}
+
+.section-static {
+    background: linear-gradient(to bottom right, #a1c4fd, #c2e9fb);
+    padding: 30px;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+
+.artwork {
+    background: radial-gradient(circle, #ffffff, #f0f0f0);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.artwork img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 5px solid #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+footer {
+    background: linear-gradient(to right, #232526, #414345);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}

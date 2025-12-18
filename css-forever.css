@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: repeating-linear-gradient(
+        45deg,
+        #f0f0f0,
+        #f0f0f0 20px,
+        #e0e0e0 20px,
+        #e0e0e0 40px
+    );
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+h1 {
+    text-align: center;
+    background: linear-gradient(90deg, crimson, gold, teal);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3em;
+    margin-bottom: 50px;
+}
+
+.gradient-box {
+    padding: 40px;
+    margin: 30px 0;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.gradient-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0,0,0,0.3);
+}
+
+.gradient-1 {
+    background: linear-gradient(45deg, crimson, gold);
+    border: 5px solid rgba(255,255,255,0.3);
+}
+
+.gradient-2 {
+    background: radial-gradient(circle at center, teal, yellowgreen);
+    border: 5px dashed rgba(255,255,255,0.3);
+}
+
+.gradient-3 {
+    background: 
+        linear-gradient(90deg, rgba(255,0,0,0.3), rgba(0,255,0,0.3)),
+        linear-gradient(180deg, rgba(0,0,255,0.3), rgba(255,255,0,0.3)),
+        #333;
+    border: 5px double rgba(255,255,255,0.3);
+}
+
+.animation-box {
+    padding: 40px;
+    margin: 30px 0;
+    border-radius: 20px;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    color: white;
+    text-align: center;
+    border: 5px solid white;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
